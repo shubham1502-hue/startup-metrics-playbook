@@ -1,5 +1,21 @@
 # Startup Metrics Playbook
 
+## Problem This Solves
+
+Early teams often track too many numbers, define the same metric three different ways, or confuse investor metrics with operating metrics. That makes dashboards noisy and decisions weak.
+
+## How It Helps
+
+- Gives founders and operators a practical metric dictionary with definitions, formulas, SQL examples, benchmarks, and traps.
+- Turns metric selection into an operating decision: what to track, why it matters, and how to avoid misleading reads.
+- Works as a starter reference for building a founder dashboard, board pack, or RevOps analytics layer.
+
+## When To Fork This
+
+- Fork this if you are building your first startup metrics dashboard, board reporting layer, or founder operating review.
+- Fork it when your team argues about CAC, LTV, churn, NRR, burn, pipeline, or activation because definitions are unclear.
+- Customize the SQL assumptions, benchmarks, and primary metric set for your business model and stage.
+
 > A practitioner's reference for the 20 metrics that matter most at early-stage startups — built for founders, operators, and anyone sitting in a Founder's Office.
 
 Every metric here includes: what it means, how to calculate it, the SQL to pull it, and what "good" actually looks like at different stages. No fluff. No textbook definitions. Just the signal a founder needs to make a decision.
