@@ -22,6 +22,21 @@ Every metric here includes: what it means, how to calculate it, the SQL to pull 
 
 ---
 
+## Use This In Your Company
+
+- Use it as a metrics dictionary before building a dashboard, board pack, or weekly review.
+- Keep the structure: metric definition, formula, SQL logic, benchmark, interpretation, and traps.
+- Replace benchmarks and SQL table names with your company stage and warehouse schema.
+
+## Minimum Edits To Make It Yours
+
+- primary metric set
+- benchmark assumptions
+- SQL table/column names
+- weekly review template
+
+The fastest path is: fork the repo, replace the inputs above, run the demo or open the template, then adjust only the parts that reflect your company's workflow.
+
 ## Who This Is For
 
 - **Founders** who want a single source of truth for their business health dashboard
