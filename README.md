@@ -88,6 +88,14 @@ The default sample data and examples are synthetic, anonymized, or template-only
 - copyable formulas and interpretation notes
 - dashboard and board-pack vocabulary
 
+## Sample artifacts to inspect
+
+Open these before building a dashboard:
+
+- The Quick Reference Index in `README.md`: the fastest metric map.
+- The individual metric sections in `README.md`: definitions, formulas, interpretation, and traps.
+- `docs/founder-use-case.md`: how to turn definitions into an operating artifact.
+
 ## Example founder workflow
 
 - Monday: choose the metrics for the current operating question.
