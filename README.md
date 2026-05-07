@@ -24,6 +24,8 @@ Every metric here includes: what it means, how to calculate it, the SQL to pull 
 
 ## Use This In Your Company
 
+This repo is designed to be forked into an internal company workflow. Fork it, replace the sample inputs with your company context, and keep only the parts that match your operating cadence. No permission request or sales call is needed before using it; the repo is the handoff. Check the license if you plan to redistribute your version.
+
 - Use it as a metrics dictionary before building a dashboard, board pack, or weekly review.
 - Keep the structure: metric definition, formula, SQL logic, benchmark, interpretation, and traps.
 - Replace benchmarks and SQL table names with your company stage and warehouse schema.
