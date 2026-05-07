@@ -32,12 +32,16 @@ This repo is designed to be forked into an internal company workflow. Fork it, r
 
 ## Minimum Edits To Make It Yours
 
-- primary metric set
-- benchmark assumptions
-- SQL table/column names
-- weekly review template
+Change these first:
 
-The fastest path is: fork the repo, replace the inputs above, run the demo or open the template, then adjust only the parts that reflect your company's workflow.
+| Edit | Where | Why |
+|---|---|---|
+| Pick your primary metric set. | metric index in `README.md` | Keeps the dashboard focused on the metrics that matter at your stage. |
+| Replace benchmark assumptions. | each metric's benchmark section | Prevents generic targets from becoming false operating guidance. |
+| Map SQL table and column names. | SQL blocks inside `README.md` | Makes the playbook usable with your warehouse or BI layer. |
+| Add your review cadence. | weekly review or board-pack section you create from this repo | Turns definitions into an operating habit. |
+
+You can leave the metric structure, formulas, and traps sections alone on the first fork. First map the metrics to your data model; then add company-specific benchmarks.
 
 ## Who This Is For
 
