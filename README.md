@@ -126,6 +126,7 @@ Use this repo with the Founder OS ecosystem if you want to connect it to adjacen
 - Use before [founder-os-revenue-engine](https://github.com/shubham1502-hue/founder-os-revenue-engine) so funnel metrics are defined consistently.
 - Use before [founder-weekly-operating-review-agent](https://github.com/shubham1502-hue/founder-weekly-operating-review-agent) so weekly metrics have owners and interpretation.
 - Use before [board-pack-investor-update-agent](https://github.com/shubham1502-hue/board-pack-investor-update-agent) so investor metrics are not ambiguous.
+- Use with [founder-retention-expansion-os](https://github.com/shubham1502-hue/founder-retention-expansion-os) when post-activation health, renewal, expansion, churn, or proof metrics need consistent definitions.
 - Use with [revops-infrastructure-playbook](https://github.com/shubham1502-hue/revops-infrastructure-playbook) when metric definitions need source-system mapping.
 
 ## Lifecycle handoff
@@ -146,13 +147,16 @@ This repo produces:
 After:
 
 - [founder-os-revenue-engine](https://github.com/shubham1502-hue/founder-os-revenue-engine) for revenue diagnosis.
+- [founder-retention-expansion-os](https://github.com/shubham1502-hue/founder-retention-expansion-os) for post-activation retention, renewal, expansion, churn, and customer proof operating metrics.
 - [founder-weekly-operating-review-agent](https://github.com/shubham1502-hue/founder-weekly-operating-review-agent) for weekly review.
 - [board-pack-investor-update-agent](https://github.com/shubham1502-hue/board-pack-investor-update-agent) for board and investor narrative.
 - [revops-infrastructure-playbook](https://github.com/shubham1502-hue/revops-infrastructure-playbook) for CRM and reporting architecture.
 
 ## Where this fits in the Founder OS
 
-This is the metric language layer for `founder-weekly-operating-review-agent`, `board-pack-investor-update-agent`, `founder-os-revenue-engine`, and `revops-infrastructure-playbook`.
+This is the metric language layer for `founder-weekly-operating-review-agent`, `board-pack-investor-update-agent`, `founder-os-revenue-engine`, `founder-retention-expansion-os`, and `revops-infrastructure-playbook`.
+
+[Founder Retention Expansion OS](https://github.com/shubham1502-hue/founder-retention-expansion-os) operationalizes post-activation metrics such as health, renewal risk, expansion readiness, churn drivers, references, and proof opportunities.
 
 ## Why this matters
 
