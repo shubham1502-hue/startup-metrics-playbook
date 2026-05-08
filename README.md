@@ -148,15 +148,18 @@ After:
 
 - [founder-os-revenue-engine](https://github.com/shubham1502-hue/founder-os-revenue-engine) for revenue diagnosis.
 - [founder-retention-expansion-os](https://github.com/shubham1502-hue/founder-retention-expansion-os) for post-activation retention, renewal, expansion, churn, and customer proof operating metrics.
+- [founder-product-feedback-roadmap-os](https://github.com/shubham1502-hue/founder-product-feedback-roadmap-os) for product feedback and roadmap decisions tied to revenue impact, retention risk, expansion potential, and lifecycle stage.
 - [founder-weekly-operating-review-agent](https://github.com/shubham1502-hue/founder-weekly-operating-review-agent) for weekly review.
 - [board-pack-investor-update-agent](https://github.com/shubham1502-hue/board-pack-investor-update-agent) for board and investor narrative.
 - [revops-infrastructure-playbook](https://github.com/shubham1502-hue/revops-infrastructure-playbook) for CRM and reporting architecture.
 
 ## Where this fits in the Founder OS
 
-This is the metric language layer for `founder-weekly-operating-review-agent`, `board-pack-investor-update-agent`, `founder-os-revenue-engine`, `founder-retention-expansion-os`, and `revops-infrastructure-playbook`.
+This is the metric language layer for `founder-weekly-operating-review-agent`, `board-pack-investor-update-agent`, `founder-os-revenue-engine`, `founder-retention-expansion-os`, `founder-product-feedback-roadmap-os`, and `revops-infrastructure-playbook`.
 
 [Founder Retention Expansion OS](https://github.com/shubham1502-hue/founder-retention-expansion-os) operationalizes post-activation metrics such as health, renewal risk, expansion readiness, churn drivers, references, and proof opportunities.
+
+[Founder Product Feedback Roadmap OS](https://github.com/shubham1502-hue/founder-product-feedback-roadmap-os) operationalizes product and customer metrics by connecting feedback themes to revenue impact, retention risk, expansion potential, lifecycle stage, and roadmap decision logic.
 
 ## Why this matters
 
