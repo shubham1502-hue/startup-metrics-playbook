@@ -115,6 +115,41 @@ Customize these before using the repo for a real company:
 - dashboard ownership
 - board reporting language
 
+## Standalone or integrated
+
+Standalone:
+Use this repo by itself if you only need metric definitions, formulas, interpretation notes, and dashboard planning language before building reports. Fork it, replace the sample input, run the workflow or copy the templates, and use the main output in your next founder review.
+
+Integrated:
+Use this repo with the Founder OS ecosystem if you want to connect it to adjacent operating workflows.
+
+- Use before [founder-os-revenue-engine](https://github.com/shubham1502-hue/founder-os-revenue-engine) so funnel metrics are defined consistently.
+- Use before [founder-weekly-operating-review-agent](https://github.com/shubham1502-hue/founder-weekly-operating-review-agent) so weekly metrics have owners and interpretation.
+- Use before [board-pack-investor-update-agent](https://github.com/shubham1502-hue/board-pack-investor-update-agent) so investor metrics are not ambiguous.
+- Use with [revops-infrastructure-playbook](https://github.com/shubham1502-hue/revops-infrastructure-playbook) when metric definitions need source-system mapping.
+
+## Lifecycle handoff
+
+Before:
+
+- [founder-os](https://github.com/shubham1502-hue/founder-os) for deciding which operating questions matter.
+- Business model and KPI needs from the founder or operator.
+
+This repo produces:
+
+- Metric definitions
+- Formulas
+- Interpretation notes
+- Dashboard planning language
+- Metric ownership prompts
+
+After:
+
+- [founder-os-revenue-engine](https://github.com/shubham1502-hue/founder-os-revenue-engine) for revenue diagnosis.
+- [founder-weekly-operating-review-agent](https://github.com/shubham1502-hue/founder-weekly-operating-review-agent) for weekly review.
+- [board-pack-investor-update-agent](https://github.com/shubham1502-hue/board-pack-investor-update-agent) for board and investor narrative.
+- [revops-infrastructure-playbook](https://github.com/shubham1502-hue/revops-infrastructure-playbook) for CRM and reporting architecture.
+
 ## Where this fits in the Founder OS
 
 This is the metric language layer for `founder-weekly-operating-review-agent`, `board-pack-investor-update-agent`, `founder-os-revenue-engine`, and `revops-infrastructure-playbook`.
