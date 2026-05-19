@@ -1,27 +1,50 @@
 # Startup Metrics Playbook
 
-Founder-facing metric dictionary for startup dashboards, board packs, RevOps analytics, and operating reviews.
+Metric language layer for founders, operators, and RevOps teams who need dashboards, board packs, and weekly reviews to use the same definitions.
+
+Use this before building a dashboard, board pack, revenue review, or operating review. It is not an analytics app. It is the shared vocabulary that prevents CAC, LTV, churn, activation, pipeline, burn, and retention from meaning different things across teams.
+
+The repo is intentionally documentation-first. Open the Quick Reference Index, choose the metrics that match the current operating question, then map each metric to an owner and source system.
 
 <!-- FOUNDER_OS_STANDARD_README -->
 
+## Start here
+
+| Reader | Open first | Why | CTA |
+| --- | --- | --- | --- |
+| Founder | [Quick Reference Index](#quick-reference-index) | Choose the few metrics tied to the current operating question. | Pick 5 to 8 metrics and remove the rest from the dashboard plan. |
+| Operator | [Minimum Edits To Make It Yours](#minimum-edits-to-make-it-yours) | Map definitions to owners, source systems, and stage-specific assumptions. | Replace benchmark assumptions before using the definitions. |
+| Hiring manager | [The Metrics](#the-metrics) | See practical metric interpretation, SQL examples, and operating traps. | Review whether definitions connect to decisions, not vanity reporting. |
+| Founder OS user | [Where this fits in the Founder OS](#where-this-fits-in-the-founder-os) | See which repo should consume these definitions. | Use the metric layer before weekly review, board pack, or revenue diagnosis work. |
+
+## Use this instead of adjacent repos when
+
+| If the operating problem is... | Use this repo | Use the adjacent repo instead when... |
+| --- | --- | --- |
+| Metrics are undefined, inconsistent, or debated | Yes | Use `founder-weekly-operating-review-agent` when the weekly packet already has clean metric definitions. |
+| A board pack needs consistent terms before narrative | Yes | Use `board-pack-investor-update-agent` when metrics are already defined and need narrative. |
+| Revenue leakage needs diagnosis | Not alone | Use `founder-os-revenue-engine` after CAC, pipeline, conversion, and retention definitions are clear. |
+| CRM fields and reporting architecture are broken | No | Use `revops-infrastructure-playbook` for source-system and handoff architecture. |
+
 ## The founder problem
 
-Early teams often track too many numbers, define the same metric three different ways, or confuse investor metrics with operating metrics. That makes dashboards noisy and decisions weak.
+Early teams often track too many numbers, define the same metric three different ways, or confuse investor metrics with operating metrics. That makes dashboards noisy, board prep slower, and weekly operating reviews less useful.
 
 ## What this repo does
 
-- defines core startup metrics
-- explains formulas, traps, and interpretation
-- provides a reference for dashboards and board packs
-- connects metrics to operating decisions
+- Defines core startup metrics
+- Explains formulas, traps, and interpretation
+- Provides SQL-style examples where useful
+- Connects each metric to operating decisions
+- Gives founders a cleaner input layer for dashboards, board packs, and weekly reviews
 
 ## What a founder gets in 10 minutes
 
-- metric definitions
-- formula reference
+- A quick metric map
+- Formula references
 - SQL-style examples where present
-- benchmark and interpretation notes
-- dashboard planning guide
+- Benchmark and interpretation notes
+- A cleaner dashboard or board-pack vocabulary
 
 ## Before and after
 
@@ -50,10 +73,12 @@ After:
 
 ## Quick start
 
-- Fork the repo.
-- Open `README.md` and start with the Quick Reference Index.
-- Copy the metrics you actually use into your dashboard spec.
-- Pair the definitions with `board-pack-investor-update-agent` or `founder-weekly-operating-review-agent`.
+1. Open the [Quick Reference Index](#quick-reference-index).
+2. Pick the metrics tied to the current operating question.
+3. Delete or ignore metrics that do not matter for the current stage.
+4. Replace benchmark assumptions with company-specific assumptions.
+5. Map each metric to a source system and owner.
+6. Pair the definitions with `board-pack-investor-update-agent`, `founder-weekly-operating-review-agent`, or `revops-infrastructure-playbook`.
 
 ## How to fork and use this for your company
 
@@ -191,13 +216,13 @@ Fork it, replace the sample inputs with your company context, and run the workfl
 
 ## If you are a Founder's Office candidate
 
-Use this repo to understand how a founder-facing operator turns messy inputs into decisions, cadence, and execution artifacts. Fork it, adapt it to a real company example, and write a short case note explaining what changed.
+Use this repo to show metric judgment: choosing the right metric for the decision, spotting misleading reads, mapping definitions to source systems, and keeping board or weekly review numbers consistent.
 
 ---
 
-## Detailed implementation notes
+## Metric reference
 
-The founder-facing guide above is the fastest path. The original repo-specific notes are preserved below for deeper implementation context.
+The founder-facing guide above is the fastest path. The metric reference below preserves the formulas, SQL patterns, benchmarks, and traps for deeper implementation context.
 
 ## Problem This Solves
 
@@ -215,15 +240,9 @@ Early teams often track too many numbers, define the same metric three different
 - Fork it when your team argues about CAC, LTV, churn, NRR, burn, pipeline, or activation because definitions are unclear.
 - Customize the SQL assumptions, benchmarks, and primary metric set for your business model and stage.
 
-> A practitioner's reference for the 20 metrics that matter most at early-stage startups - built for founders, operators, and anyone sitting in a Founder's Office.
-
-Every metric here includes: what it means, how to calculate it, the SQL to pull it, and what "good" actually looks like at different stages. No fluff. No textbook definitions. Just the signal a founder needs to make a decision.
-
----
-
 ## Use This In Your Company
 
-This repo is designed to be forked into an internal company workflow. Fork it, replace the sample inputs with your company context, and keep only the parts that match your operating cadence. No permission request or sales call is needed before using it; the repo is the handoff. Check the license if you plan to redistribute your version.
+Fork it into an internal company workflow when metric definitions are blocking better dashboards, board packs, or weekly reviews. Keep only the parts that match your operating cadence. Check the license if you plan to redistribute your version.
 
 - Use it as a metrics dictionary before building a dashboard, board pack, or weekly review.
 - Keep the structure: metric definition, formula, SQL logic, benchmark, interpretation, and traps.
